@@ -85,14 +85,15 @@ const Products = () => {
       <Link
         to="/cart"
         className="fixed bottom-6 right-6 bg-pink-500 hover:bg-pink-600 text-white rounded-full p-4 shadow-lg text-xl z-50 relative"
-      >
+        >
         🛒
         {cartItems.length > 0 && (
-          <span className="absolute -top-2 -right-2 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-red-600 rounded-full">
+            <span className="absolute -top-2 -right-2 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-red-600 rounded-full">
             {cartItems.length}
-          </span>
+            </span>
         )}
-      </Link>
+        </Link>
+
 
       <h1 className="text-4xl md:text-5xl font-light text-center text-pink-600 mb-10">
         Our Products
