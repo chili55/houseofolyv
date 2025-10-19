@@ -8,6 +8,7 @@ import c5 from "./assets/c5.JPG";
 import c6 from "./assets/c6.JPG";
 import { Link } from "react-router-dom";
 
+const { cartItems } = useCart();
 const products = [
   {
     id: 1,
@@ -76,7 +77,7 @@ const Products = () => {
         <ArrowLeft className="w-6 h-6 mr-1" />
         <span className="text-lg font-medium">Back</span>
       </Link>
-     const { cartItems } = useCart();
+     
 
 <Link
   to="/cart"

@@ -12,6 +12,7 @@ import c3 from "./assets/c3.JPG";
 import c4 from "./assets/c4.JPG";
 import { Link } from "react-router-dom";
 
+const { cartItems } = useCart();
 const Home = () => {
   return (
     <div className="bg-pink-50 text-gray-800 font-sans">
@@ -173,7 +174,7 @@ const Home = () => {
       <footer className="py-6 text-center bg-white text-gray-500 text-sm border-t border-pink-100">
         © {new Date().getFullYear()} House of Olyv • All Rights Reserved
       </footer>
-      const { cartItems } = useCart();
+      
 
 <Link
   to="/cart"
